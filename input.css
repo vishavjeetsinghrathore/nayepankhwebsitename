@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar{
+
+   
+   background-color: transparent; /* Set an initial transparent background */
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000; /* Ensure it's above other content */
+   transition: background-color 0.3s; /* Add a smooth transition for background-color */
+
+}
+
+.hero{
+    height: 100vh;
+    background-image: url("section1image.avif");
+    width:100vw;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:relative;
+   
+}
+
+.hero1{
+
+     height:100vh;
+    background-image: url("sec3.webp");
+    width:100vw;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:relative;
+}
+
+.sec1{
+    background-color: #2b2828
+}
+
+.sec2{
+
+    background-color:#2b2828
+
+}
+
+i.fab.fa-youtube,
+i.fab.fa-facebook,
+i.fab.fa-twitter,
+i.fab.fa-instagram {
+  font-size: 24px;
+  color: #03090c; /* Customize the color as needed */
+}
+
+.slider {
+    width: 100%;
+    height: 510px;
+    position: relative;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .slider img:first-child {
+    z-index: 1;
+  }
+  
+  .slider img:nth-child(2) {
+    z-index: 0;
+  }
+
+  .navigation-button {
+    text-align: center;
+    position: relative;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;}
